@@ -110,5 +110,5 @@ rf_cls_predictions = rf_classifier.predict(x_cls_test)
 
 
 # Plot residuals for regression
-plot_residuals(y_reg_test, nn_test_predictions, title="NN Residuals", save_path="../visualizations/nn_residuals.png")
-plot_residuals(y_reg_test, tree_test_predictions, title="Tree Residuals", save_path="../visualizations/tree_residuals.png")
+plot_residuals(y_reg_test, nn_test_predictions, title="NN Residuals")
+plot_residuals(y_reg_test, tree_test_predictions, title="Tree Residuals")
