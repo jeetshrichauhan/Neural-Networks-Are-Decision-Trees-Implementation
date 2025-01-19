@@ -64,13 +64,11 @@ def plot_classification_metrics(y_test, nn_predictions, tree_predictions):
     plt.ylim(0, 1)
     plt.show()
 
-def plot_residuals(y_true, y_pred, title="Residual Plot", save_path=None):
+def plot_residuals(y_true, y_pred, title="Residual Plot"):
     residuals = y_true - y_pred
     plt.scatter(y_pred, residuals, alpha=0.6, color="purple")
     plt.axhline(0, color='red', linestyle='--')
     plt.title(title)
     plt.xlabel("Predicted Values")
     plt.ylabel("Residuals")
-    if save_path:
-        plt.savefig(save_path, format="png", dpi=300)
     plt.show()
