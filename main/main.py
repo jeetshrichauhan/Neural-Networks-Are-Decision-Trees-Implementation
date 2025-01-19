@@ -5,7 +5,7 @@ from neural_network import build_nn, train_nn
 from tree_generator import extract_regression_tree, extract_classification_tree
 from sklearn.metrics import mean_squared_error, accuracy_score
 from model_tuning import tune_decision_tree_regressor
-from models import build_random_forest_regressor, build_random_forest_classifier
+from random_forest import build_random_forest_regressor, build_random_forest_classifier
 import numpy as np
 
 from visualization import (
